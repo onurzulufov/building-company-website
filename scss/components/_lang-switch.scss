@@ -1,0 +1,37 @@
+.header__lang-switch {
+  background-color: $white-color;
+  display: inline-flex;
+  padding: 5px;
+  border-radius: $radius-full;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 32px;
+    background-color: $color-dark-blue;
+    border-radius: $radius-full;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  &--en::before {
+    transform: translateX(60px);
+  }
+
+  &__btn {
+    width: 60px;
+    height: 32px;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+    transition: color 0.2s ease;
+
+    &--active {
+      color: $white-color;
+    }
+  }
+}

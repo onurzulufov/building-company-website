@@ -1,0 +1,14 @@
+// base css
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+
+// sections 
+
+@import "./sections/header";
+
+// Components
+
+@import "./components/nav";
+@import "./components/button";
+@import "./components/lang-switch";

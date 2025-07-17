@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--projects {
+  background-color: $color-button;
+  border-radius: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.btn--contacts {
+  border: 1px solid $white-color;
+  border-radius: 100px;
+  padding-left: 22px;
+  padding-right: 22px;
+}

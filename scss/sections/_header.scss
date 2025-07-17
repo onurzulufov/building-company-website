@@ -1,0 +1,57 @@
+.header {
+  min-height: 828px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/header/header-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $white-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 11px;
+
+  &__top {
+    margin-bottom: 172px;
+  }
+
+  &__top-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 115px;
+  }
+
+  &__title {
+    max-width: 728px;
+    font-family: $font-accent;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__nav {
+    margin-right: 78px;
+  }
+
+  &__footer {
+    margin-bottom: 58px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__scroll-down {
+    display: flex;
+    justify-content: center;
+  }
+}
