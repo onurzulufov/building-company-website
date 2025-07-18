@@ -15,3 +15,11 @@ $color-grey-light: #D5D5D5;
 // Border
 
 $radius-full: 100px;
+
+@mixin icons-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

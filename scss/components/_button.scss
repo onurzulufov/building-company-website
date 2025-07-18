@@ -1,5 +1,5 @@
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -15,7 +15,7 @@
 
 .btn--projects {
   background-color: $color-button;
-  border-radius: 100px;
+  border-radius: $radius-full;
   padding-left: 25px;
   padding-right: 25px;
 }

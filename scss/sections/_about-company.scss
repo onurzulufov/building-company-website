@@ -1,0 +1,70 @@
+.about-company {
+  margin: 100px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__left {
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 280px);
+      grid-template-rows: repeat(2, 250px);
+      gap: 32px;
+    }
+
+    .info-grid__item {
+      width: 280px;
+      height: 258px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $color-description;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $color-description;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+
+    .btn--contacts {
+      border: 1px solid $color-black-soft;
+      color: $color-black-soft;
+    }
+  }
+
+}

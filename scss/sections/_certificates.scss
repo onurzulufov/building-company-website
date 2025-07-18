@@ -1,0 +1,17 @@
+.licenses {
+  margin-bottom: 100px;
+
+  &__title {
+    font-family: $font-accent;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    align-items: center;
+  }
+}
