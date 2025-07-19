@@ -18,7 +18,7 @@
         <div class="header__top">
           <div class="header__top-row">
             <div class="header__logo">
-              <img src="./img/logo.svg" alt="Логотип KURYLYS" />
+              <img src="./img/logo.svg" alt="" />
             </div>
             <div class="header__nav">
               <nav class="nav">
@@ -31,7 +31,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="header__lang-switch" aria-label="Выбор языка">
+            <div class="header__lang-switch">
               <button class="header__lang-switch__btn header__lang-switch__btn--active" type="button"
                 data-lang="ru">Рус</button>
               <button class="header__lang-switch__btn" type="button" data-lang="en">Eng</button>
@@ -194,7 +194,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -469,40 +468,106 @@
       </div>
     </section>
 
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__logo">
-          <img src="./img/logo.svg" alt="Логотип">
-        </div>
-
-        <nav class="footer__nav">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Проекты</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer__contacts">
-          <p>+7 (777) 123-45-67</p>
-          <p>info@example.com</p>
-          <p>г. Астана, пр. Абылай хана, 25</p>
-        </div>
-      </div>
-
-      <div class="footer__bottom">
-        <div class="footer__copy">© RRR</div>
-        <div class="footer__social">
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
+<section class="request">
+  <div class="container">
+    <div class="request__inner">
+      
+      <div class="request__info">
+        <div class="request__card request__card--wide">
+          <div class="request__item">
+            <img src="./img/icons/location.svg" alt="Адрес" class="request__icon">
+            <p class="request__text">Казахстан, г. Название, дом 12</p>
+          </div>
+          <a href="#" class="request__item request__item--link">
+            <img src="./img/icons/google-maps.svg" alt="Google Maps" class="request__icon">
+            <span class="request__link">Google Maps</span>
+          </a>
+          <a href="#" class="request__item request__item--link">
+            <img src="./img/icons/location.svg" alt="2GIS" class="request__icon">
+            <span class="request__link">2GIS / 2ГИС</span>
           </a>
         </div>
+
+        <div class="request__card">
+          <img src="./img/icons/time.svg" alt="Время" class="request__icon">
+          <div class="request__time">
+            <p><span class="request__label">Пн-Пт:</span> 08:30–17:30</p>
+            <p><span class="request__label">Сб-Вс:</span> Выходной</p>
+          </div>
+        </div>
+
+        <div class="request__card">
+          <div class="request__item">
+            <img src="./img/icons/phone-number.svg" alt="Телефон" class="request__icon">
+            <p class="request__text">+7 (777) 777 77 77</p>
+          </div>
+          <div class="request__item">
+            <img src="./img/icons/e-mail.svg" alt="Email" class="request__icon">
+            <p class="request__text">info@primer.kz</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="request__form">
+        <div class="request__form-bg">
+          <div class="request__form-content">
+            <h2 class="request__title">Оставьте заявку</h2>
+            <p class="request__description">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее рабочее время.</p>
+            <form class="request__form-fields">
+              <div class="request__inputs">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+              </div>
+              <textarea placeholder="Суть обращения" required></textarea>
+              <button type="submit" class="request__submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="./img/logo.svg" alt="Логотип">
+      </div>
+
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#">Навигация</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Проекты</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Новости</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <p>Контакты</p>
+        <p>Адрес: Казахстан, г. Название, дом 12</p>
+        <p>Телефон: +7 (777) 777 77 77 </p>
       </div>
     </div>
-  </footer>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">ABC DESIGN</div>
+      <div class="footer__social">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
 
   <script src="./scripts/script.js">
   </script>
