@@ -1,0 +1,17 @@
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Редакторы
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Логи
+*.log
+
+# Временные и кеш-файлы
+*.tmp
+*.cache
+.cache/
