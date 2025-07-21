@@ -1,24 +1,24 @@
 // base css
-@import "./base/reset";
-@import "./base/vars";
-@import "./base/base";
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
 
-// sections 
+// sections
 
-@import "./sections/header";
-@import "./sections/about-company";
-@import "./sections/projects";
-@import "./sections/advantages";
-@import "./sections/specialization";
-@import "./sections/certificates";
-@import "./sections/faq";
-@import "./sections/partners";
-@import "./sections/news";
-@import "./sections/request";
-@import "./sections/footer";
+@import './sections/header';
+@import './sections/about-company';
+@import './sections/projects';
+@import './sections/advantages';
+@import './sections/specialization';
+@import './sections/licenses';
+@import './sections/faq';
+@import './sections/partners';
+@import './sections/news';
+@import './sections/request';
+@import './sections/footer';
 
 // Components
 
-@import "./components/nav";
-@import "./components/button";
-@import "./components/lang-switch";
+@import './components/nav';
+@import './components/button';
+@import './components/lang-switch';

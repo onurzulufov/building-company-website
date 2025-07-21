@@ -1,6 +1,7 @@
 .header__lang-switch {
-  background-color: $white-color;
+  background-color: $color-white;
   display: inline-flex;
+  gap: 5px;
   padding: 5px;
   border-radius: $radius-full;
   position: relative;
@@ -25,13 +26,12 @@
   &__btn {
     width: 60px;
     height: 32px;
-    color: #000000;
+    color: $color-black;
     position: relative;
     z-index: 2;
-    transition: color 0.2s ease;
 
     &--active {
-      color: $white-color;
+      color: $color-white;
     }
   }
 }

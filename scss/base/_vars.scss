@@ -5,21 +5,30 @@ $font-accent: 'Fira Sans', sans-serif;
 
 // Colors
 
-$white-color: #FFFFFF;
-$color-dark-blue: #1C2D4A;
+$color-white: #ffffff;
+$color-dark-blue: #1c2d4a;
 $color-button: #345389;
-$color-black-soft: #1D1D1D;
+$color-black-soft: #1d1d1d;
+$color-black: #000000;
 $color-description: #666666;
-$color-grey-light: #D5D5D5;
+$color-grey-light: #d5d5d5;
 
-// Border
+// Borders
 
 $radius-full: 100px;
+$radius-lg: 32px;
+
+// Mixins
 
 @mixin icons-style {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  pointer-events: none;
+}
+
+@mixin heading-lg {
+  font-family: $font-accent;
+  font-size: 48px;
+  font-weight: 500;
 }

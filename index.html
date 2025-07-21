@@ -1,578 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Строительная компания - KURYLYS</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Строительная компания - KURYLYS</title>
-  <link rel="stylesheet" href="./css/main.css">
-</head>
+  <body>
+    <a href="#" class="whatsapp-btn">
+      <img src="./img/icons/whatsapp.svg" alt="whatsapp" />
+    </a>
 
-<body>
+    <!-- Секция: Header  -->
 
-  <!-- Секция: Header  -->
-
-  <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <div class="header__top">
-          <div class="header__top-row">
-            <div class="header__logo">
-              <img src="./img/logo.svg" alt="" />
-            </div>
-            <div class="header__nav">
-              <nav class="nav">
-                <ul class="nav__list">
-                  <li class="nav__item nav__item--active"><a href="#">Главная</a></li>
-                  <li class="nav__item"><a href="#">О нас</a></li>
-                  <li class="nav__item"><a href="#">Проекты</a></li>
-                  <li class="nav__item"><a href="#">Контакты</a></li>
-                  <li class="nav__item"><a href="#">Новости</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="header__lang-switch">
-              <button class="header__lang-switch__btn header__lang-switch__btn--active" type="button"
-                data-lang="ru">Рус</button>
-              <button class="header__lang-switch__btn" type="button" data-lang="en">Eng</button>
-            </div>
-          </div>
-        </div>
-        <div class="header__title">
-          <h1>
-            СТРОИМ КАЧЕСТВЕННО И БЕЗОПАСНО
-          </h1>
-        </div>
-        <div class="header__footer">
-          <div class="header__buttons">
-            <a href="#" class="btn btn--projects">Наши проекты
-              <span class="btn__icon">
-                <img src="./img/icons/arrow-up-right-white.svg" alt="arrow-up-right-white" /></span></a>
-            <a href="#" class="btn btn--contacts">Связаться с нами</a>
-          </div>
-        </div>
-        <a href="#" class="header__scroll-down" aria-label="Прокрутить вниз">
-          <img src="./img/header/expand_down_light.svg" alt="Стрелка вниз" />
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Секция: О Компании -->
-
-  <main>
-    <section class="about-company">
+    <header class="header">
       <div class="container">
-        <div class="about-company__inner">
-          <div class="about-company__left">
-            <div class="info-grid">
-              <div class="info-grid__item">
-                <h1>100+</h1>
-                <p>Текст, который нужно вставить. Текст, который нужно вставить.</p>
+        <div class="header__content">
+          <div class="header__top">
+            <div class="header__top-row">
+              <div class="header__logo">
+                <img src="./img/logo.svg" alt="Логотип KURYLYS" />
               </div>
-              <div class="info-grid__item">
-                <h1>100+</h1>
-                <p>Текст, который нужно вставить. Текст, который нужно вставить.</p>
+              <div class="header__nav">
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item nav__item--active"><a href="#" data-lang="nav__item-home">Главная</a></li>
+                    <li class="nav__item"><a href="#" data-lang="nav__item-about">О нас</a></li>
+                    <li class="nav__item"><a href="#" data-lang="nav__item-projects">Проекты</a></li>
+                    <li class="nav__item"><a href="#" data-lang="nav__item-contacts">Контакты</a></li>
+                    <li class="nav__item"><a href="#" data-lang="nav__item-news">Новости</a></li>
+                  </ul>
+                </nav>
               </div>
-              <div class="info-grid__item">
-                <h1>100+</h1>
-                <p>Текст, который нужно вставить. Текст, который нужно вставить.</p>
-              </div>
-              <div class="info-grid__item">
-                <h1>100+</h1>
-                <p>Текст, который нужно вставить. Текст, который нужно вставить.</p>
+              <div class="header__lang-switch">
+                <button class="header__lang-switch__btn header__lang-switch__btn--active" type="button" data-lang="ru">
+                  Рус
+                </button>
+                <button class="header__lang-switch__btn" type="button" data-lang="en">Eng</button>
               </div>
             </div>
           </div>
-          <div class="about-company__right">
-            <h2 class="about-company__title">О компании</h2>
-            <p class="about-company__text">
-              Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он
-              необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего
-              продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.
-              Это текст о компании. <br> <br> Это текст о компании. Он необходим для дальнейшего продвижения Вашего
-              сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании.
-              Он
-              необходим для дальнейшего продвижения Вашего сайта.
-            </p>
-            <div class="about-company__buttons">
-              <a href="#" class="btn btn--projects">
-                Наши проекты
+          <div class="header__title">
+            <h1 data-lang="header__title">СТРОИМ КАЧЕСТВЕННО И БЕЗОПАСНО</h1>
+          </div>
+          <div class="header__footer">
+            <div class="header__buttons">
+              <a href="#" class="btn btn--projects" data-lang="btn__projects" target="_blank" rel="noopener noreferrer"
+                >Наши проекты
                 <span class="btn__icon">
-                  <img src="./img/icons/arrow-up-right-white.svg" alt="arrow-up-right-white" />
-                </span>
-              </a>
-              <a href="#" class="btn btn--contacts">Связаться с нами</a>
+                  <img src="./img/icons/arrow-up-right-white.svg" alt="arrow-up-right-white" /> </span
+              ></a>
+              <a href="#" class="btn btn--contacts" data-lang="btn__contacts" target="_blank" rel="noopener noreferrer"
+                >Связаться с нами</a
+              >
+            </div>
+          </div>
+          <a href="#about">
+            <img src="./img/header/expand_down_light.svg" alt="Стрелка вниз" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Секция: О Компании -->
+
+      <section class="about-company" id="about">
+        <div class="container">
+          <div class="about-company__inner">
+            <div class="about-company__left">
+              <div class="info-grid">
+                <div class="info-grid__item">
+                  <h1>100+</h1>
+                  <p data-lang="info-grid__item-text-1">
+                    Текст, который нужно вставить. Текст, который нужно вставить.
+                  </p>
+                </div>
+                <div class="info-grid__item">
+                  <h1>100+</h1>
+                  <p data-lang="info-grid__item-text-2">
+                    Текст, который нужно вставить. Текст, который нужно вставить.
+                  </p>
+                </div>
+                <div class="info-grid__item">
+                  <h1>100+</h1>
+                  <p data-lang="info-grid__item-text-3">
+                    Текст, который нужно вставить. Текст, который нужно вставить.
+                  </p>
+                </div>
+                <div class="info-grid__item">
+                  <h1>100+</h1>
+                  <p data-lang="info-grid__item-text-4">
+                    Текст, который нужно вставить. Текст, который нужно вставить.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="about-company__right">
+              <h2 class="about-company__title" data-lang="about-company__title">О компании</h2>
+              <p class="about-company__text" data-lang="about-company__text">
+                Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он
+                необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего
+                продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта.
+                Это текст о компании. <br />
+                <br />
+                Это текст о компании. Он необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он
+                необходим для дальнейшего продвижения Вашего сайта. Это текст о компании. Он необходим для дальнейшего
+                продвижения Вашего сайта.
+              </p>
+              <div class="about-company__buttons">
+                <a
+                  href="#"
+                  class="btn btn--projects"
+                  data-lang="btn__projects"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Наши проекты
+                  <span class="btn__icon">
+                    <img src="./img/icons/arrow-up-right-white.svg" alt="arrow-up-right-white" />
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  class="btn btn--contacts"
+                  data-lang="btn__contacts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Связаться с нами</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Секция: Наши проеккты -->
+      <!-- Секция: Наши проеккты -->
 
-    <section class="projects">
-      <div class="container">
-        <h2 class="projects__section-title">Наши проекты</h2>
-
-        <div class="projects__wrapper">
-          <div class="projects__track">
-            <div class="projects__card">
-              <img src="./img/projects/project.png" alt="project" class="projects__image" />
-              <div class="projects__overlay">
-                <h3 class="projects__title">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
-                <p class="projects__description">Текст описание вашего проекта. Вам нужно будет предоставить нужную
-                  инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст
-                  описание вашего проекта. Вам нужно будет предоставить нужную инормацию.</p>
-                <a href="#" class="btn btn--projects">
-                  Посмотреть проект
-                  <span class="btn__icon">
-                    <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
-                  </span>
-                </a>
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__section-title" data-lang="projects__section-title">Наши проекты</h2>
+          <div class="projects__wrapper">
+            <div class="projects__track">
+              <div class="projects__card projects__card--active">
+                <img src="./img/projects/project.png" alt="project" class="projects__image" />
+                <div class="projects__overlay">
+                  <h3 class="projects__title" data-lang="projects__title-1">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
+                  <p class="projects__description" data-lang="projects__description-1">
+                    Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего
+                    проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно
+                    будет предоставить нужную инормацию.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn--projects"
+                    data-lang="btn__projects"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Посмотреть проект
+                    <span class="btn__icon">
+                      <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__card">
-              <img src="./img/projects/project.png" alt="project" class="projects__image" />
-              <div class="projects__overlay">
-                <h3 class="projects__title">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
-                <p class="projects__description">Текст описание вашего проекта. Вам нужно будет предоставить нужную
-                  инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст
-                  описание вашего проекта. Вам нужно будет предоставить нужную инормацию.</p>
-                <a href="#" class="btn btn--projects">
-                  Посмотреть проект
-                  <span class="btn__icon">
-                    <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
-                  </span>
-                </a>
+              <div class="projects__card">
+                <img src="./img/projects/project.png" alt="project" class="projects__image" />
+                <div class="projects__overlay">
+                  <h3 class="projects__title" data-lang="projects__title-2">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
+                  <p class="projects__description" data-lang="projects__description-2">
+                    Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего
+                    проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно
+                    будет предоставить нужную инормацию.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn--projects"
+                    data-lang="btn__projects"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Посмотреть проект
+                    <span class="btn__icon">
+                      <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__card">
-              <img src="./img/projects/project.png" alt="project" class="projects__image" />
-              <div class="projects__overlay">
-                <h3 class="projects__title">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
-                <p class="projects__description">Текст описание вашего проекта. Вам нужно будет предоставить нужную
-                  инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст
-                  описание вашего проекта. Вам нужно будет предоставить нужную инормацию.</p>
-                <a href="#" class="btn btn--projects">
-                  Посмотреть проект
-                  <span class="btn__icon">
-                    <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
-                  </span>
-                </a>
+              <div class="projects__card">
+                <img src="./img/projects/project.png" alt="project" class="projects__image" />
+                <div class="projects__overlay">
+                  <h3 class="projects__title" data-lang="projects__title-3">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
+                  <p class="projects__description" data-lang="projects__description-3">
+                    Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего
+                    проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно
+                    будет предоставить нужную инормацию.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn--projects"
+                    data-lang="btn__projects"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Посмотреть проект
+                    <span class="btn__icon">
+                      <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__card">
-              <img src="./img/projects/project.png" alt="project" class="projects__image" />
-              <div class="projects__overlay">
-                <h3 class="projects__title">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
-                <p class="projects__description">Текст описание вашего проекта. Вам нужно будет предоставить нужную
-                  инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст
-                  описание вашего проекта. Вам нужно будет предоставить нужную инормацию.</p>
-                <a href="#" class="btn btn--projects">
-                  Посмотреть проект
-                  <span class="btn__icon">
-                    <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
-                  </span>
-                </a>
+              <div class="projects__card">
+                <img src="./img/projects/project.png" alt="project" class="projects__image" />
+                <div class="projects__overlay">
+                  <h3 class="projects__title" data-lang="projects__title-4">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
+                  <p class="projects__description" data-lang="projects__description-4">
+                    Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего
+                    проекта. Вам нужно будет предоставить нужную инормацию. Текст описание вашего проекта. Вам нужно
+                    будет предоставить нужную инормацию.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn--projects"
+                    data-lang="btn__projects"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Посмотреть проект
+                    <span class="btn__icon">
+                      <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__card">
-              <img src="./img/projects/project.png" alt="project" class="projects__image" />
-              <div class="projects__overlay">
-                <h3 class="projects__title">НАЗВАНИЕ ОДНОГО ИЗ ВАШИХ ПРОЕКТОВ</h3>
-                <p class="projects__description">Текст описание вашего проекта. Вам нужно будет предоставить нужную
-                  инормацию. Текст описание вашего проекта. Вам нужно будет предоставить нужную инормацию. Текст
-                  описание вашего проекта. Вам нужно будет предоставить нужную инормацию.</p>
-              </div>
-              <a href="#" class="btn btn--projects">
-                Посмотреть проект
-                <span class="btn__icon">
-                  <img src="./img/icons/arrow-up-right-blue.svg" alt="arrow-up-right-blue" />
-                </span>
-              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Секция: Наши преимущества -->
+      <!-- Секция: Наши преимущества -->
 
-    <section class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">Наши преимущества</h2>
-        <div class="advantages__grid">
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/quality-assurance.svg" alt="icon" class="icon" />
+      <section class="advantages">
+        <div class="container">
+          <h2 class="advantages__title" data-lang="advantages__title">Наши преимущества</h2>
+          <div class="advantages__grid">
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/quality-assurance.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-1">Гарантия качества</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-1">
+                Строим по стандартам, используем сертифицированные материалы и проверенные технологии.
+              </p>
             </div>
-            <h3 class="advantages__item-title">Гарантия качества</h3>
-            <p class="advantages__item-text">Строим по стандартам, используем сертифицированные материалы и проверенные
-              технологии.</p>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/meeting-deadlines.svg" alt="icon" class="icon" />
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/meeting-deadlines.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-2">Соблюдение сроков</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-2">
+                Работаем по чёткому плану и сдаём объекты точно в оговорённые сроки
+              </p>
             </div>
-            <h3 class="advantages__item-title">Соблюдение сроков</h3>
-            <p class="advantages__item-text">Работаем по чёткому плану и сдаём объекты точно в оговорённые сроки</p>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/security.svg" alt="icon" class="icon" />
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/security.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-3">Безопасность на первом месте</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-3">
+                Соблюдаем строительные, санитарные и противопожарные нормы на всех этапах.
+              </p>
             </div>
-            <h3 class="advantages__item-title">Безопасность на первом месте</h3>
-            <p class="advantages__item-text">Соблюдаем строительные, санитарные и противопожарные нормы на всех этапах.
-            </p>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/estimate.svg" alt="icon" class="icon" />
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/estimate.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-4">Прозрачная смета</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-4">
+                Честный расчёт стоимости без скрытых услуг и неожиданных доплат.
+              </p>
             </div>
-            <h3 class="advantages__item-title">Прозрачная смета</h3>
-            <p class="advantages__item-text">Честный расчёт стоимости без скрытых услуг и неожиданных доплат.</p>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/individual-approach.svg" alt="icon" class="icon" />
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/individual-approach.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-5">Индивидуальный подход</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-5">
+                Учитываем задачи, бюджет и особенности объекта каждого клиента.
+              </p>
             </div>
-            <h3 class="advantages__item-title">Индивидуальный подход</h3>
-            <p class="advantages__item-text">Учитываем задачи, бюджет и особенности объекта каждого клиента.</p>
-          </div>
-          <div class="advantages__item">
-            <div class="advantages__icon-wrapper">
-              <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
-              <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
-              <img src="./img/advantages/experienced-team.svg" alt="icon" class="icon" />
+            <div class="advantages__item">
+              <div class="advantages__icon-wrapper">
+                <img src="./img/advantages/gear.svg" alt="gear" class="gear" />
+                <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
+                <img src="./img/advantages/experienced-team.svg" alt="icon" class="icon" />
+              </div>
+              <h3 class="advantages__item-title" data-lang="advantages__item-title-6">Опытная команда</h3>
+              <p class="advantages__item-text" data-lang="advantages__item-text-6">
+                Над проектами работают квалифицированные инженеры, архитекторы и строители.
+              </p>
             </div>
-            <h3 class="advantages__item-title">Опытная команда</h3>
-            <p class="advantages__item-text">Над проектами работают квалифицированные инженеры, архитекторы и строители.
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Секция: Специализация компании -->
+      <!-- Секция: Специализация компании -->
 
-    <section class="specialization">
+      <section class="specialization">
+        <div class="container">
+          <div class="specialization__inner">
+            <div class="specialization__image-wrapper">
+              <img src="./img/company-specialization.png" alt="Специализация" class="specialization__image" />
+            </div>
+
+            <div class="specialization__content">
+              <h2 data-lang="specialization__title">На чём специализируется<br />наша компания</h2>
+              <ul class="specialization__list">
+                <li data-lang="specialization__list-item-1">
+                  Строительство промышленных и гражданских зданий и сооружений
+                </li>
+                <li data-lang="specialization__list-item-2">Проектно-изыскательские работы в строительстве</li>
+                <li data-lang="specialization__list-item-3">
+                  Экспертные работы и инжиниринговые услуги в строительстве
+                </li>
+                <li data-lang="specialization__list-item-4">Реконструкция и капитальный ремонт</li>
+                <li data-lang="specialization__list-item-5">Реставрационные работы</li>
+                <li data-lang="specialization__list-item-6">Прочие стрительно-монтажные работы</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: Лицензии и сертификаты -->
+
+      <section class="licenses">
+        <div class="container">
+          <h2 class="licenses__title" data-lang="licenses__title">Лицензии и сертификаты</h2>
+          <div class="licenses__grid">
+            <div>
+              <img src="./img/licenses/license.png" alt="Лицензия" />
+            </div>
+            <div class="licenses__item">
+              <img src="./img/licenses/license.png" alt="Лицензия" />
+            </div>
+            <div class="licenses__item">
+              <img src="./img/licenses/license.png" alt="Лицензия" />
+            </div>
+            <div class="licenses__item">
+              <img src="./img/licenses/license.png" alt="Лицензия" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: Часто задаваемые вопросы -->
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title" data-lang="faq__title">Часто задаваемые вопросы</h2>
+          <ul>
+            <li class="faq__item">
+              <span class="faq__number">01</span>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-1">Сколько времени занимает строительство объекта?</p>
+                <p class="faq__answer active" data-lang="faq__answer-1">
+                  Сроки зависят от масштаба проекта, но мы всегда обсуждаем график заранее и строго его соблюдаем.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__number">02</div>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-2">Сколько стоит строительство под ключ?</p>
+                <p class="faq__answer" data-lang="faq__answer-2">
+                  Стоимость зависит от проекта, площади и материалов. Средняя цена - от 150,000 ₸/м². Точную смету
+                  составим после обсуждения.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__number">03</div>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-3">Какие документы вы предоставляете?</p>
+                <p class="faq__answer" data-lang="faq__answer-3">
+                  Предоставляем договор, смету, акты выполненных работ, лицензии и сертификаты соответствия.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__number">04</div>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-4">
+                  Вы работаете только в Астане или по всему Казахстану?
+                </p>
+                <p class="faq__answer" data-lang="faq__answer-4">
+                  Работаем по всему Казахстану, включая Астану, Алматы и регионы.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__number">05</div>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-5">Можно ли использовать свои материалы?</p>
+                <p class="faq__answer" data-lang="faq__answer-5">
+                  Да, вы можете предоставить свои материалы, мы согласуем их соответствие стандартам.
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__number">06</div>
+              <div class="faq__question">
+                <p class="faq__text" data-lang="faq__question-6">Есть ли гарантия на выполненные работы?</p>
+                <p class="faq__answer" data-lang="faq__answer-6">
+                  Да, даём гарантию до 10 лет на строительные и монтажные работы.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секция: Наши партнеры -->
+
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title" data-lang="partners__title">Наши партнёры</h2>
+
+          <div class="partners__list">
+            <div class="partners__item">
+              <img src="./img/partners/microsoft.svg" alt="Microsoft" />
+            </div>
+            <div class="partners__item">
+              <img src="./img/partners/apple.svg" alt="Apple" />
+            </div>
+            <div class="partners__item">
+              <img src="./img/partners/amazon.svg" alt="Amazon" />
+            </div>
+            <div class="partners__item">
+              <img src="./img/partners/ibm.svg" alt="IBM" />
+            </div>
+            <div class="partners__item">
+              <img src="./img/partners/toyota.svg" alt="Toyota" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: Новости -->
+
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title" data-lang="news__title">Новости</h2>
+          <div class="news__grid news__grid--row1">
+            <div class="news__card">
+              <img src="./img/news/building-design-wide.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-1">Название новости</h3>
+                <p class="news__text" data-lang="news__text-1">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <img src="./img/news/bulding-design.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-2">Название новости</h3>
+                <p class="news__text" data-lang="news__text-2">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <img src="./img/news/bulding-design.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-3">Название новости</h3>
+                <p class="news__text" data-lang="news__text-3">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="news__grid news__grid--row2">
+            <div class="news__card">
+              <img src="./img/news/bulding-design.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-4">Название новости</h3>
+                <p class="news__text" data-lang="news__text-4">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <img src="./img/news/bulding-design.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-5">Название новости</h3>
+                <p class="news__text" data-lang="news__text-5">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+            <div class="news__card">
+              <img src="./img/news/building-design-wide.png" alt="Проектирование зданий" />
+              <div class="news__info">
+                <div class="news__date">01.05.2025</div>
+                <h3 class="news__heading" data-lang="news__heading-6">Название новости</h3>
+                <p class="news__text" data-lang="news__text-6">
+                  Текст-описание новости. Текст-описание новости. Текст-описание новости. Текст-описание новости
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cекция: Оставить заявку -->
+
+      <section class="request">
+        <div class="container">
+          <div class="request__inner">
+            <div class="request__info">
+              <div class="request__card request__card--wide">
+                <div class="request__item">
+                  <img src="./img/icons/location.svg" alt="Адрес" />
+                  <p class="request__text" data-lang="request__address">Казахстан, г. Название, дом 12</p>
+                </div>
+                <a href="#" class="request__item" target="_blank" rel="noopener noreferrer">
+                  <img src="./img/icons/google-maps.svg" alt="Google Maps" />
+                  <span class="request__link" data-lang="request__link-google">Google Maps</span>
+                </a>
+                <a href="#" class="request__item">
+                  <img src="./img/icons/location.svg" alt="2GIS" target="_blank" rel="noopener noreferrer" />
+                  <span class="request__link" data-lang="request__link-2gis">2GIS / 2ГИС</span>
+                </a>
+              </div>
+
+              <div class="request__card">
+                <div class="request__item">
+                  <img src="./img/icons/time.svg" alt="Время" />
+                  <div class="request__time">
+                    <p><span class="request__label" data-lang="request__label-weekdays">Пн-Пт:</span> 08:30–17:30</p>
+                    <p>
+                      <span class="request__label" data-lang="request__label-weekends">Сб-Вс:</span>
+                      <span data-lang="request__weekends">Выходной</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="request__card request__card--size">
+                <div class="request__item">
+                  <img src="./img/icons/phone-number.svg" alt="Телефон" />
+                  <p class="request__text" data-lang="request__phone">+7 (777) 777 77 77</p>
+                </div>
+                <div class="request__item">
+                  <img src="./img/icons/e-mail.svg" alt="Email" />
+                  <p class="request__text" data-lang="request__email">info@primer.kz</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="request__form">
+              <div class="request__form-bg">
+                <div class="request__form-content">
+                  <h2 class="request__title" data-lang="request__title">Оставьте заявку</h2>
+                  <p class="request__description" data-lang="request__description">
+                    Оставьте заявку и наш менеджер свяжется с Вами в ближайшее рабочее время.
+                  </p>
+                  <form class="request__form-fields">
+                    <div class="request__inputs">
+                      <input type="text" placeholder="Ваше имя" data-lang-placeholder="request__input-name" required />
+                      <input type="tel" placeholder="Телефон" data-lang-placeholder="request__input-phone" required />
+                    </div>
+                    <input
+                      placeholder="Суть обращения"
+                      data-lang-placeholder="request__input-message"
+                      required
+                      class="request__input-message" />
+                    <button type="submit" class="request__submit" data-lang="request__submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <div class="specialization__inner">
-          <div class="specialization__image-wrapper">
-            <img src="./img/company-specialization.png" alt="Специализация" class="specialization__image" />
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="./img/logo.svg" alt="Логотип" />
           </div>
 
-          <div class="specialization__content">
-            <h2>На чём специализируется<br />наша компания</h2>
-            <ul class="specialization__list">
-              <li>Строительство промышленных и гражданских зданий и сооружений </li>
-              <li>Проектно-изыскательские работы в строительстве</li>
-              <li>Экспертные работы и инжиниринговые услуги в строительстве</li>
-              <li>Реконструкция и капитальный ремонт</li>
-              <li>Реставрационные работы</li>
-              <li>Прочие стрительно-монтажные работы</li>
+          <nav class="footer__nav">
+            <ul class="footer_list">
+              <li><a href="#" data-lang="footer__nav-home">Навигация</a></li>
+              <li><a href="#" data-lang="footer__nav-about">О нас</a></li>
+              <li><a href="#" data-lang="footer__nav-projects">Проекты</a></li>
+              <li><a href="#" data-lang="footer__nav-contacts">Контакты</a></li>
+              <li><a href="#" data-lang="footer__nav-news">Новости</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+          </nav>
 
-    <!-- Секция: Лицензии и сертификаты -->
-
-    <section class="licenses">
-      <div class="container">
-        <h2 class="licenses__title">Лицензии и сертификаты</h2>
-        <div class="licenses__grid">
-          <div>
-            <img src="./img/licenses/license.png" alt="Лицензия" />
-          </div>
-          <div class="licenses__item">
-            <img src="./img/licenses/license.png" alt="Лицензия" />
-          </div>
-          <div class="licenses__item">
-            <img src="./img/licenses/license.png" alt="Лицензия" />
-          </div>
-          <div class="licenses__item">
-            <img src="./img/licenses/license.png" alt="Лицензия" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секция: Часто задаваемые вопросы -->
-
-    <section class="faq">
-      <div class="container">
-        <h2 class="faq__title">Часто задаваемые вопросы</h2>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <div class="faq__number">01</div>
-            <div class="faq__question">
-              <p class="faq__text">
-                Сколько времени занимает строительство объекта?
-              </p>
-              <p class="faq__answer active">
-                Сроки зависят от масштаба проекта, но мы всегда обсуждаем график заранее и строго его соблюдаем.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__number">02</div>
-            <div class="faq__question">
-              <p class="faq__text">Сколько стоит строительство под ключ?</p>
-              <p class="faq__answer">
-                Стоимость зависит от проекта, площади и материалов. Средняя цена - от 150,000 ₸/м². Точную смету
-                составим после обсуждения.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__number">03</div>
-            <div class="faq__question">
-              <p class="faq__text">Какие документы вы предоставляете?</p>
-              <p class="faq__answer">
-                Предоставляем договор, смету, акты выполненных работ, лицензии и сертификаты соответствия.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__number">04</div>
-            <div class="faq__question">
-              <p class="faq__text">Вы работаете только в Астане или по всему Казахстану?</p>
-              <p class="faq__answer">
-                Работаем по всему Казахстану, включая Астану, Алматы и регионы.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__number">05</div>
-            <div class="faq__question">
-              <p class="faq__text">Можно ли использовать свои материалы?</p>
-              <p class="faq__answer">
-                Да, вы можете предоставить свои материалы, мы согласуем их соответствие стандартам.
-              </p>
-            </div>
-          </li>
-          <li class="faq__item">
-            <div class="faq__number">06</div>
-            <div class="faq__question">
-              <p class="faq__text">Есть ли гарантия на выполненные работы?</p>
-              <p class="faq__answer">
-                Да, даём гарантию до 10 лет на строительные и монтажные работы.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Секция: Наши партнеры -->
-
-    <section class="partners">
-      <div class="container">
-        <h2 class="partners__title">Наши партнёры</h2>
-
-        <div class="partners__list">
-          <div class="partners__item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
-          </div>
-          <div class="partners__item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
-          </div>
-          <div class="partners__item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
-          </div>
-          <div class="partners__item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM">
-          </div>
-          <div class="partners__item">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Toyota_logo.svg" alt="Toyota">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секция: Новости -->
-
-    <section class="news">
-      <div class="container">
-        <h2 class="news__title">Новости</h2>
-
-        <div class="news__grid">
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-          <div class="news__card">
-            <img src="./img/news/bulding-design.png" alt="Проектирование зданий">
-            <div class="news__info">
-              <div class="news__date">01.05.2025</div>
-              <h3 class="news__heading">Название новости</h3>
-              <p class="news__text">Текст-описание новости. Текст-описание новости. Текст-описание новости.
-                Текст-описание новости</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section class="request">
-  <div class="container">
-    <div class="request__inner">
-      
-      <div class="request__info">
-        <div class="request__card request__card--wide">
-          <div class="request__item">
-            <img src="./img/icons/location.svg" alt="Адрес" class="request__icon">
-            <p class="request__text">Казахстан, г. Название, дом 12</p>
-          </div>
-          <a href="#" class="request__item request__item--link">
-            <img src="./img/icons/google-maps.svg" alt="Google Maps" class="request__icon">
-            <span class="request__link">Google Maps</span>
-          </a>
-          <a href="#" class="request__item request__item--link">
-            <img src="./img/icons/location.svg" alt="2GIS" class="request__icon">
-            <span class="request__link">2GIS / 2ГИС</span>
-          </a>
-        </div>
-
-        <div class="request__card">
-          <img src="./img/icons/time.svg" alt="Время" class="request__icon">
-          <div class="request__time">
-            <p><span class="request__label">Пн-Пт:</span> 08:30–17:30</p>
-            <p><span class="request__label">Сб-Вс:</span> Выходной</p>
+          <div class="footer__contacts">
+            <p data-lang="footer__contacts-title">Контакты</p>
+            <p data-lang="footer__contacts-address">Адрес: Казахстан, г. Название, дом 12</p>
+            <p data-lang="footer__contacts-phone">Телефон: +7 (777) 777 77 77</p>
           </div>
         </div>
 
-        <div class="request__card">
-          <div class="request__item">
-            <img src="./img/icons/phone-number.svg" alt="Телефон" class="request__icon">
-            <p class="request__text">+7 (777) 777 77 77</p>
-          </div>
-          <div class="request__item">
-            <img src="./img/icons/e-mail.svg" alt="Email" class="request__icon">
-            <p class="request__text">info@primer.kz</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="request__form">
-        <div class="request__form-bg">
-          <div class="request__form-content">
-            <h2 class="request__title">Оставьте заявку</h2>
-            <p class="request__description">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее рабочее время.</p>
-            <form class="request__form-fields">
-              <div class="request__inputs">
-                <input type="text" placeholder="Ваше имя" required>
-                <input type="tel" placeholder="Телефон" required>
-              </div>
-              <textarea placeholder="Суть обращения" required></textarea>
-              <button type="submit" class="request__submit">Отправить</button>
-            </form>
+        <div class="footer__bottom">
+          <div class="footer__copy" data-lang="footer__copy">ABC DESIGN</div>
+          <div class="footer__social">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img src="./img/icons/white-eclipse.svg" alt="white-eclipse" class="footer__white-eclipse" />
+              <img src="./img/icons/instagram.svg" alt="Instagram" class="footer__instagram" />
+            </a>
           </div>
         </div>
       </div>
+    </footer>
 
-    </div>
-  </div>
-</section>
-
-  </main>
-
-  <footer class="footer">
-  <div class="container">
-    <div class="footer__top">
-      <div class="footer__logo">
-        <img src="./img/logo.svg" alt="Логотип">
-      </div>
-
-      <nav class="footer__nav">
-        <ul>
-          <li><a href="#">Навигация</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Проекты</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Новости</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer__contacts">
-        <p>Контакты</p>
-        <p>Адрес: Казахстан, г. Название, дом 12</p>
-        <p>Телефон: +7 (777) 777 77 77 </p>
-      </div>
-    </div>
-
-    <div class="footer__bottom">
-      <div class="footer__copy">ABC DESIGN</div>
-      <div class="footer__social">
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24">
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-
-  <script src="./scripts/script.js">
-  </script>
-  <script src="./scripts/nav.js"></script>
-  <script src="./scripts/accordion.js"></script>
-</body>
-
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/accordion.js"></script>
+    <script src="./scripts/lang.js"></script>
+  </body>
 </html>

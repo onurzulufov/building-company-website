@@ -1,13 +1,11 @@
 .faq {
   margin-bottom: 100px;
-  
+
   &__title {
-    font-family: $font-accent;
-    font-size: 48px;
-    font-weight: 500;
+    @include heading-lg;
     margin-bottom: 40px;
   }
-  
+
   &__item {
     display: flex;
     align-items: center;
@@ -15,19 +13,19 @@
     padding-bottom: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
     &:last-child {
       border-bottom: none;
     }
   }
 
-      &__number {
-      font-family: $font-accent;
-      font-size: 40px;
-      font-weight: 700;
-      color: $color-dark-blue;
-      margin-right: 24px;
-    }
+  &__number {
+    font-family: $font-accent;
+    font-size: 40px;
+    font-weight: 700;
+    color: $color-dark-blue;
+    margin-right: 24px;
+  }
 
   &__question {
     display: flex;
@@ -35,7 +33,7 @@
     cursor: pointer;
   }
 
-    &__text {
+  &__text {
     font-size: 24px;
     font-weight: 600;
   }

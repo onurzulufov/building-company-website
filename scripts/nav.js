@@ -13,7 +13,5 @@ document.querySelectorAll('.nav__item a').forEach((link, index) => {
     const gap = 10;
     const translateX = index * (itemWidth + gap);
     navList.style.setProperty('--nav-translate-x', `${translateX}px`);
-    
-    console.log(`Активный пункт: ${link.textContent}, translateX: ${translateX}px`);
   });
 });

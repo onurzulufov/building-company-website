@@ -2,19 +2,28 @@
 
 body {
   font-family: $font-main;
-  background-color: $white-color;
+  background-color: $color-white;
   color: $color-black-soft;
   font-weight: 400;
   font-size: 16px;
 }
 
+.whatsapp-btn {
+  position: fixed;
+  right: 12px;
+  bottom: 38px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 a {
-  color: $white-color;
+  color: $color-white;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1251px;
-  // background-color: lightskyblue;
 }

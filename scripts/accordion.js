@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const answer = question.querySelector('.faq__answer');
       const isActive = question.getAttribute('aria-expanded') === 'true';
 
-      // Переключить текущий вопрос
       question.setAttribute('aria-expanded', !isActive);
       answer.classList.toggle('active');
     });

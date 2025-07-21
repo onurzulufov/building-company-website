@@ -1,72 +1,80 @@
 .footer {
   background-color: #000000;
-  color: $white-color;
-  padding-top: 60px;
+  color: $color-white;
+  padding-top: 36px;
 
   &__top {
     display: flex;
-    align-items: flex-start;
-    padding-bottom: 40px;
-    border-bottom: 1px solid $color-grey-light;
+    padding-bottom: 66px;
+    border-bottom: 1px solid $color-white;
   }
 
   &__logo {
     padding-right: 138px;
+
     img {
-      max-width: 150px;
-      height: auto;
+      width: 138px;
+      height: 143px;
     }
   }
-  
 
   &__nav {
     padding-right: 161px;
-     ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 
-    a {
-      color: $white-color;
-      text-decoration: none;
-      font-size: 16px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
 
-      &:hover {
-        color: $color-button;
+      li:first-child {
+        a {
+          color: $color-white;
+          font-weight: 600;
+        }
+      }
+
+      li {
+        a {
+          font-size: 14px;
+          color: #a1a1a1;
+        }
       }
     }
   }
-}
 
   &__contacts {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
+
+    p:first-child {
+      color: $color-white;
+      font-weight: 600;
+    }
 
     p {
-      font-size: 16px;
+      color: #a1a1a1;
     }
   }
 
   &__bottom {
-    padding: 20px 0;
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__copy {
-    font-size: 14px;
-    color: #999;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 13px;
+    color: #777777;
   }
 
-  &__social img {
-    filter: brightness(0) invert(1);
-    transition: 0.3s ease;
+  &__social {
+    position: relative;
+  }
 
-    &:hover {
-      opacity: 0.8;
-    }
+  &__instagram {
+    @include icons-style;
   }
 }

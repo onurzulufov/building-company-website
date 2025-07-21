@@ -19,3 +19,28 @@ document.querySelectorAll('.header__lang-switch__btn').forEach(button => {
     console.log(`Выбран язык: ${button.dataset.lang}`);
   });
 });
+
+
+// Ховер на блоки секции Наши проекты
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.projects__card');
+  const track = document.querySelector('.projects__track');
+  const firstCard = cards[0];
+
+  const clearActiveClasses = () => {
+    cards.forEach(card => card.classList.remove('projects__card--active'));
+  };
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      clearActiveClasses();
+      card.classList.add('projects__card--active');
+    });
+  });
+
+  track.addEventListener('mouseleave', () => {
+    clearActiveClasses();
+    firstCard.classList.add('projects__card--active');
+  });
+});
