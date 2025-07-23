@@ -1,6 +1,10 @@
 .partners {
   margin-bottom: 100px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
   &__title {
     font-family: $font-accent;
     font-size: 48px;
@@ -8,6 +12,11 @@
     color: $color-black-soft;
     margin-bottom: 60px;
     text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -16,6 +25,11 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media (max-width: 768px) {
+      gap: 24px;
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -25,6 +39,18 @@
     align-items: center;
     max-width: 180px;
     height: 100px;
+
+    @media (max-width: 768px) {
+      flex: 0 1 calc(33.33% - 16px);
+      max-width: 140px;
+      height: 80px;
+    }
+
+    @media (max-width: 480px) {
+      flex: 0 1 calc(50% - 12px);
+      max-width: 120px;
+      height: 70px;
+    }
 
     img {
       max-height: 100%;

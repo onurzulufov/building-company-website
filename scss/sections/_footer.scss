@@ -3,18 +3,62 @@
   color: $color-white;
   padding-top: 36px;
 
+  @media (max-width: 768px) {
+    padding-top: 30px;
+  }
+
   &__top {
     display: flex;
+    align-items: flex-start;
     padding-bottom: 66px;
     border-bottom: 1px solid $color-white;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding-bottom: 30px;
+      gap: 30px;
+    }
   }
 
   &__logo {
     padding-right: 138px;
 
+    @media (max-width: 1024px) {
+      padding-right: 60px;
+    }
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+
     img {
       width: 138px;
       height: 143px;
+
+      @media (max-width: 768px) {
+        width: 100px;
+        height: auto;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    @media (max-width: 1024px) {
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      align-items: center;
+      gap: 30px;
     }
   }
 
@@ -25,6 +69,10 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
+
+      @media (max-width: 768px) {
+        gap: 12px;
+      }
 
       li:first-child {
         a {
@@ -37,6 +85,10 @@
         a {
           font-size: 14px;
           color: #a1a1a1;
+
+          @media (max-width: 768px) {
+            font-size: 13px;
+          }
         }
       }
     }
@@ -47,6 +99,11 @@
     flex-direction: column;
     gap: 14px;
 
+    @media (max-width: 768px) {
+      gap: 12px;
+      min-width: auto;
+    }
+
     p:first-child {
       color: $color-white;
       font-weight: 600;
@@ -54,6 +111,11 @@
 
     p {
       color: #a1a1a1;
+      font-size: 14px;
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
     }
   }
 
@@ -62,12 +124,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      padding: 20px 0;
+      justify-content: flex-start;
+      gap: 180px;
+    }
   }
 
   &__copy {
     font-family: 'Proxima Nova', sans-serif;
     font-size: 13px;
     color: #777777;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 
   &__social {
@@ -76,5 +148,10 @@
 
   &__instagram {
     @include icons-style;
+
+    @media (max-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

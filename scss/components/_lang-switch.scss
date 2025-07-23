@@ -1,10 +1,17 @@
 .header__lang-switch {
   background-color: $color-white;
-  display: inline-flex;
+  display: flex;
   gap: 5px;
   padding: 5px;
   border-radius: $radius-full;
   position: relative;
+  height: 42px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    min-width: 130px;
+    justify-content: center;
+  }
 
   &::before {
     content: '';

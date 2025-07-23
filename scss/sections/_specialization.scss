@@ -1,9 +1,22 @@
 .specialization {
   margin-bottom: 118px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
   &__inner {
     display: flex;
     gap: 50px;
+
+    @media (max-width: 1024px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 
   &__image-wrapper {
@@ -11,7 +24,19 @@
     width: 542px;
     height: 502px;
 
+    @media (max-width: 1024px) {
+      width: 450px;
+      height: 420px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 300px;
+    }
+
     img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       border-radius: $radius-lg;
     }
@@ -23,8 +48,19 @@
     justify-content: center;
     gap: 30px;
 
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
+
     h2 {
       @include heading-lg;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+        br {
+          display: none;
+        }
+      }
     }
   }
 
@@ -34,11 +70,24 @@
     width: 526px;
     gap: 15px;
 
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      gap: 12px;
+    }
+
     li {
       font-size: 18px;
       color: $color-description;
       position: relative;
       padding-left: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding-left: 16px;
+      }
 
       &::before {
         content: '•';
@@ -48,6 +97,11 @@
         color: $color-description;
         font-size: 18px;
         line-height: 1;
+
+        @media (max-width: 768px) {
+          font-size: 14px;
+          top: 3px;
+        }
       }
     }
   }

@@ -24,6 +24,7 @@
               </div>
               <div class="header__nav">
                 <nav class="nav">
+                  <button class="nav__close" type="button"></button>
                   <ul class="nav__list">
                     <li class="nav__item nav__item--active"><a href="#" data-lang="nav__item-home">Главная</a></li>
                     <li class="nav__item"><a href="#" data-lang="nav__item-about">О нас</a></li>
@@ -39,6 +40,11 @@
                 </button>
                 <button class="header__lang-switch__btn" type="button" data-lang="en">Eng</button>
               </div>
+              <button class="hamburger" type="button">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+              </button>
             </div>
           </div>
           <div class="header__title">
@@ -247,10 +253,12 @@
                 <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
                 <img src="./img/advantages/quality-assurance.svg" alt="icon" class="icon" />
               </div>
-              <h3 class="advantages__item-title" data-lang="advantages__item-title-1">Гарантия качества</h3>
-              <p class="advantages__item-text" data-lang="advantages__item-text-1">
-                Строим по стандартам, используем сертифицированные материалы и проверенные технологии.
-              </p>
+              <div class="advantages__content">
+                <h3 class="advantages__item-title" data-lang="advantages__item-title-1">Гарантия качества</h3>
+                <p class="advantages__item-text" data-lang="advantages__item-text-1">
+                  Строим по стандартам, используем сертифицированные материалы и проверенные технологии.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__icon-wrapper">
@@ -258,10 +266,12 @@
                 <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
                 <img src="./img/advantages/meeting-deadlines.svg" alt="icon" class="icon" />
               </div>
-              <h3 class="advantages__item-title" data-lang="advantages__item-title-2">Соблюдение сроков</h3>
-              <p class="advantages__item-text" data-lang="advantages__item-text-2">
-                Работаем по чёткому плану и сдаём объекты точно в оговорённые сроки
-              </p>
+              <div class="advantages__content">
+                <h3 class="advantages__item-title" data-lang="advantages__item-title-2">Соблюдение сроков</h3>
+                <p class="advantages__item-text" data-lang="advantages__item-text-2">
+                  Работаем по чёткому плану и сдаём объекты точно в оговорённые сроки
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__icon-wrapper">
@@ -269,10 +279,14 @@
                 <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
                 <img src="./img/advantages/security.svg" alt="icon" class="icon" />
               </div>
-              <h3 class="advantages__item-title" data-lang="advantages__item-title-3">Безопасность на первом месте</h3>
-              <p class="advantages__item-text" data-lang="advantages__item-text-3">
-                Соблюдаем строительные, санитарные и противопожарные нормы на всех этапах.
-              </p>
+              <div class="advantages__content">
+                <h3 class="advantages__item-title" data-lang="advantages__item-title-3">
+                  Безопасность на первом месте
+                </h3>
+                <p class="advantages__item-text" data-lang="advantages__item-text-3">
+                  Соблюдаем строительные, санитарные и противопожарные нормы на всех этапах.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__icon-wrapper">
@@ -280,10 +294,12 @@
                 <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
                 <img src="./img/advantages/estimate.svg" alt="icon" class="icon" />
               </div>
-              <h3 class="advantages__item-title" data-lang="advantages__item-title-4">Прозрачная смета</h3>
-              <p class="advantages__item-text" data-lang="advantages__item-text-4">
-                Честный расчёт стоимости без скрытых услуг и неожиданных доплат.
-              </p>
+              <div class="advantages__content">
+                <h3 class="advantages__item-title" data-lang="advantages__item-title-4">Прозрачная смета</h3>
+                <p class="advantages__item-text" data-lang="advantages__item-text-4">
+                  Честный расчёт стоимости без скрытых услуг и неожиданных доплат.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__icon-wrapper">
@@ -291,10 +307,12 @@
                 <img src="./img/advantages/eclipse.svg" alt="eclipse" class="eclipse" />
                 <img src="./img/advantages/individual-approach.svg" alt="icon" class="icon" />
               </div>
-              <h3 class="advantages__item-title" data-lang="advantages__item-title-5">Индивидуальный подход</h3>
-              <p class="advantages__item-text" data-lang="advantages__item-text-5">
-                Учитываем задачи, бюджет и особенности объекта каждого клиента.
-              </p>
+              <div class="advantages__content">
+                <h3 class="advantages__item-title" data-lang="advantages__item-title-5">Индивидуальный подход</h3>
+                <p class="advantages__item-text" data-lang="advantages__item-text-5">
+                  Учитываем все пожелания заказчика и предлагаем оптимальные решения.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <div class="advantages__icon-wrapper">
@@ -345,7 +363,7 @@
         <div class="container">
           <h2 class="licenses__title" data-lang="licenses__title">Лицензии и сертификаты</h2>
           <div class="licenses__grid">
-            <div>
+            <div class="licenses__item">
               <img src="./img/licenses/license.png" alt="Лицензия" />
             </div>
             <div class="licenses__item">
@@ -605,21 +623,22 @@
           <div class="footer__logo">
             <img src="./img/logo.svg" alt="Логотип" />
           </div>
+          <div class="footer__content">
+            <nav class="footer__nav">
+              <ul class="footer_list">
+                <li><a href="#" data-lang="footer__nav-home">Навигация</a></li>
+                <li><a href="#" data-lang="footer__nav-about">О нас</a></li>
+                <li><a href="#" data-lang="footer__nav-projects">Проекты</a></li>
+                <li><a href="#" data-lang="footer__nav-contacts">Контакты</a></li>
+                <li><a href="#" data-lang="footer__nav-news">Новости</a></li>
+              </ul>
+            </nav>
 
-          <nav class="footer__nav">
-            <ul class="footer_list">
-              <li><a href="#" data-lang="footer__nav-home">Навигация</a></li>
-              <li><a href="#" data-lang="footer__nav-about">О нас</a></li>
-              <li><a href="#" data-lang="footer__nav-projects">Проекты</a></li>
-              <li><a href="#" data-lang="footer__nav-contacts">Контакты</a></li>
-              <li><a href="#" data-lang="footer__nav-news">Новости</a></li>
-            </ul>
-          </nav>
-
-          <div class="footer__contacts">
-            <p data-lang="footer__contacts-title">Контакты</p>
-            <p data-lang="footer__contacts-address">Адрес: Казахстан, г. Название, дом 12</p>
-            <p data-lang="footer__contacts-phone">Телефон: +7 (777) 777 77 77</p>
+            <div class="footer__contacts">
+              <p data-lang="footer__contacts-title">Контакты</p>
+              <p data-lang="footer__contacts-address">Адрес: Казахстан, г. Название, дом 12</p>
+              <p data-lang="footer__contacts-phone">Телефон: +7 (777) 777 77 77</p>
+            </div>
           </div>
         </div>
 

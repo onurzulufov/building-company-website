@@ -1,5 +1,6 @@
 .header {
-  height: 768px;
+  min-height: 768px;
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/header/header-bg.png');
   background-size: cover;
   background-position: center;
@@ -9,17 +10,55 @@
   flex-direction: column;
   padding-top: 11px;
 
+  @media (max-width: 768px) {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 20px;
+  }
+
   &__top {
     margin-bottom: 172px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 100px;
+    }
   }
 
   &__top-row {
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__logo {
     margin-right: 115px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      order: 2;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+  }
+
+  &__nav {
+    margin-right: 78px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      order: 2;
+    }
   }
 
   &__title {
@@ -29,24 +68,60 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 30px;
-  }
 
-  &__nav {
-    margin-right: 78px;
+    @media (max-width: 768px) {
+      font-size: 36px;
+      max-width: 100%;
+    }
   }
 
   &__footer {
     margin-bottom: 58px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__buttons {
     display: flex;
     column-gap: 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__lang-switch {
+    display: flex;
+    align-items: center;
+    height: 42px;
+
+    @media (max-width: 768px) {
+      order: 1;
+    }
+  }
+
+  .hamburger {
+    @media (max-width: 768px) {
+      order: 3;
+      width: 44px;
+      height: 34px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

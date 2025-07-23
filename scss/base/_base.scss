@@ -12,6 +12,7 @@ body {
   position: fixed;
   right: 12px;
   bottom: 38px;
+  z-index: 100;
 }
 
 html {
@@ -26,4 +27,9 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1251px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
 }

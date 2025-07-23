@@ -1,9 +1,18 @@
 .projects {
   margin-bottom: 100px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
   &__section-title {
     @include heading-lg;
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
   }
 
   &__wrapper {
@@ -13,21 +22,53 @@
     overflow-x: auto;
     overflow-y: hidden;
     padding: 24px 28px;
+
+    @media (max-width: 768px) {
+      height: 440px;
+      padding: 16px;
+      border-radius: 12px;
+      }
   }
 
   &__track {
     display: flex;
     gap: 21px;
+    height: 100%;
+
+    @media (max-width: 768px) {
+      gap: 12px;
+    }
   }
 
   &__card {
     position: relative;
     width: 204px;
-    height: 586px;
+    height: 100%;
     border-radius: $radius-lg;
     flex-shrink: 0;
     overflow: hidden;
     transition: width 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+      width: 160px;
+      border-radius: 12px;
+
+      &:hover,
+      &--active {
+        width: calc(100vw - 240px);
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      width: 140px;
+
+      &:hover,
+      &--active {
+        width: calc(100vw - 200px);
+        max-width: 320px;
+      }
+    }
 
     &:hover,
     &--active {
@@ -52,26 +93,55 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
-    padding-left: 38px;
+    padding: 30px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+
     .projects__title {
-      width: 414px;
+      max-width: 414px;
       font-size: 36px;
       padding-top: 195px;
       padding-bottom: 20px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        font-size: 24px;
+        padding-top: 100px;
+        padding-bottom: 16px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 20px;
+        padding-top: 60px;
+        padding-bottom: 12px;
+      }
     }
 
     .projects__description {
       font-size: 18px;
-      width: 392px;
+      max-width: 392px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        font-size: 14px;
+      }
     }
 
     .btn {
       position: absolute;
       bottom: 30px;
       right: 10px;
+
+      @media (max-width: 768px) {
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 16px;
+        font-size: 14px;
+      }
     }
 
     .btn--projects {
